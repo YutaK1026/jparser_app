@@ -1,7 +1,8 @@
+from cv2 import IMREAD_GRAYSCALE
 from flask import Flask
 from flask import request, make_response, jsonify
 from flask_cors import CORS
-from utils import wakati
+from utils import main
 
 app = Flask(__name__, static_folder="./build/static", template_folder="./build")
 CORS(app) #Cross Origin Resource Sharing
@@ -13,10 +14,10 @@ def index():
 @app.route("/wakati", methods=['GET','POST'])
 def parse():
     #print(request.get_json())
-    data = request.get_json()
-    text = data['post_text']
-
-    res = wakati(text)
+    #data = request.get_json()
+    #text = data['post_text']
+    
+    res = main(image)
     response = {'result': res}
     #print(response)
     return make_response(jsonify(response))

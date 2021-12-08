@@ -1,3 +1,16 @@
 Flask==1.0.2
 Flask-Cors==3.0.4
 mecab-python3
+torch == 1.10.0
+torchvision==0.2.1
+tensorboardX
+pillow
+numpy
+opencv-contrib-python
+japanize-matplotlib
+torchinfo == 1.5.3
+graphviz
+torchviz==0.0.2
+opencv-python
+matplotlib
+utils

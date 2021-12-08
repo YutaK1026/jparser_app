@@ -78,3 +78,6 @@ def main(image):
     print(CooList)
     c = cv2.waitKey()
     return  img
+
+if __name__ == '__main__':
+    main()
